@@ -1,0 +1,16 @@
+<div class="container">
+  <%= link_to 'Back to restaurant', @shopping_cart.restaurant %>
+
+  <h1> Your shopping cart for <%= @shopping_cart.restaurant.name %></h1>
+
+  <div class="w-50 m-auto">
+    <ul class='list-group'>
+      <% @shopping_cart.product_carts.each do |product_cart| %>
+          <%= render "product_card", product_cart: product_cart %>
+      <% end %>
+    </ul>
+    <form>
+      <input type="submit" value="Pay" class="btn btn-primary btn-block" id="submit">
+    </form>
+  </div>
+</div>

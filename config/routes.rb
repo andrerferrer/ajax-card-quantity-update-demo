@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   resources :restaurants, only: %i[index show new create destroy] do
     resources :reviews, only: :create
   end
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  resources :shopping_cart, only: %i[ show ]
 end
