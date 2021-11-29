@@ -6,7 +6,7 @@
   <div class="w-50 m-auto">
     <ul class='list-group'>
       <% @shopping_cart.product_carts.each do |product_cart| %>
-          <%= render "product_card", product_cart: product_cart %>
+        <%= render "product_card", product_cart: product_cart %>
       <% end %>
     </ul>
     <form>
