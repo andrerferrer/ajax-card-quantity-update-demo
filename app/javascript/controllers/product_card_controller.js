@@ -25,7 +25,6 @@ export default class extends Controller {
         this.element.outerHTML = data;
         // this response comes from the product_carts_controller on the update action
       })
-
   }
 
   destroy(event) {
