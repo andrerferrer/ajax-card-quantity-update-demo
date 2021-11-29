@@ -103,6 +103,28 @@ rails s
 # now you can go to http://localhost:3000/shopping_cart/1
 ```
 
+### Stimulus in a nutshell:
+
+- In the HTML vs Javascript
+
+  `data-controller` envolves it all.
+  
+  `data-target` is the `querySelector` (that we would use in JS).
+  
+  `data-action` is the `addEventListener` (that we would use in JS).
+  
+  `data-controller-inputName-value` is just to hold information for us (like normal data-sets in JS)
+
+- The Syntax
+
+  `data-controller="controller-name"`
+  
+  `data-target="controller-name.targetName"`
+  
+  `data-action="event->controller-name#actionName"`
+  
+  `data-controller-inputName-value='123'`
+
 And we're good to go 🤓
 
 Good Luck and Have Fun
